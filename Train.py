@@ -1,4 +1,3 @@
-# تحميل المكتبات اللازمة
 import pandas as pd
 import pickle
 import nltk
@@ -7,17 +6,8 @@ import re
 
 df = pd.read_csv(r'C:\Users\asus\Desktop\Artificial intelligence\Third Year\Summer\EVC\Dataanlysez\Task-3\data\train.csv')
 
-# Importing essential libraries
-import pandas as pd
-import pickle
-import nltk
-import re
-
 # Downloading the Arabic stopwords list
 nltk.download('stopwords')
-
-
-
 
 # Mapping the classes to values
 class_mapper = {'normal': 0, 'abusive': 1}
