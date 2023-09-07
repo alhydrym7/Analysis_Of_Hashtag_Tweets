@@ -4,8 +4,7 @@ import pickle
 import nltk
 import re
 
-# قم بتحميل ملف "train_arabic.csv" الذي يحتوي على البيانات باللغة العربية
-# واستبدل المسار التالي بالمسار الصحيح للملف
+
 df = pd.read_csv(r'C:\Users\asus\Desktop\Artificial intelligence\Third Year\Summer\EVC\Dataanlysez\Task-3\data\train.csv')
 
 # Importing essential libraries
@@ -85,7 +84,6 @@ pickle.dump(nb_classifier, open(filename, 'wb'))
 
 from sklearn.metrics import accuracy_score
 
-# الخطوات السابقة للتدريب وبناء النموذج
 
 # Predicting on the training set
 y_train_pred = nb_classifier.predict(X_train)
